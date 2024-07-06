@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Detail</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+</head>
+
+<body data-page-owner="true"> <!-- Assuming the page owner is logged in -->
+    <header>
+        <nav>
+            <div class="burger-menu" id="burger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="recipe-detail">
+            <h1>Recipe Title</h1>
+            <section class="recipe-info">
+                <img src="recipe-image.jpg" alt="Recipe Image">
+                <p>Recipe description goes here...</p>
+                <div class="preparation">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>Ingredient 1</li>
+                        <li>Ingredient 2</li>
+                        <li>Ingredient 3</li>
+                    </ul>
+                </div>
+                <div class="preparation">
+                    <h2>Preparation</h2>
+                    <ul>
+                        <li>Step 1</li>
+                        <li>Step 2</li>
+                        <li>Step 3</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h2>Shopping List</h2>
+                <textarea id="shopping-list-content" placeholder="I need ..." rows="10" maxlength="200"></textarea>
+                <button id="shopping-list-btn">Add to Shopping List
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+                <!-- Shopping list menu -->
+                <div id="shopping-list-popup" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Shopping List</h2>
+                        <ul id="shopping-list-items"></ul>
+                        <button id="find-stores-btn">Find Stores Near Me >></button>
+                    </div>
+            </section>
+
+            <!-- Rating section -->
+            <section class="comments">
+                <div class="ratings">
+                    <button id="thumbs-up-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+                    <button id="thumbs-down-btn"><i class="fa-solid fa-thumbs-down"></i></button>
+                    <div class="stars">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <p id="rating-result">Rating: 0.00 (0 votes)</p>
+                </div>
+                <h2>Comments</h2>
+                <div id="comment-section"></div>
+                <form id="comment-form">
+                    <textarea id="comment-input" placeholder="Leave a comment" rows="4" maxlength="200"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p><i class="fa-regular fa-copyright"></i> 2024 The Travelling Wooden Spoon</p>
+    </footer>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6ad4166ad8.js" crossorigin="anonymous"></script>
+    <!-- Store Finder -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+
+</html>
