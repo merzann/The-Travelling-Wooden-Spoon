@@ -41,12 +41,11 @@ header {
   position: relative;
 }
 
-/* Nav bar */
+/* Navbar */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
   margin: auto;
   padding: 0 1em;
 }
@@ -90,10 +89,10 @@ nav a:hover {
 
 /* hero section */
 .hero {
-  background: url('../images/background.webp') center 90% / cover no-repeat;
+  background: url('../images/background.jpeg') center 90% / cover no-repeat;
   color: #ddd;
   text-align: center;
-  padding: 4em 0;
+  padding: 10vh;
 }
 
 .hero-content {
