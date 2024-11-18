@@ -34,10 +34,10 @@ h2 {
 
 /* Main Section */
 header {
-  height: 10vh;
+  height: 5vh;
   background-color: #333;
   color: #ddd;
-  padding: 1em 0;
+  padding: 20px 10px;
   position: relative;
 }
 
@@ -58,7 +58,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 1em;
+  margin: 10px;
 }
 
 nav ul li a {
@@ -89,10 +89,10 @@ nav a:hover {
 
 /* hero section */
 .hero {
-  background: url('../images/background.jpeg') center 90% / cover no-repeat;
+  background: url('../images/background.jpeg') center / cover no-repeat;
+  min-height: 85vh;
   color: #ddd;
   text-align: center;
-  padding: 10vh;
 }
 
 .hero-content {
